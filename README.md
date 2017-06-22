@@ -2,9 +2,9 @@
 
 Dollar quote literals for use in PostgreSQL SQL commands.
 
-[![NPM](https://nodei.co/npm/pg-dollar-quote.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/rand-token/)
+[![NPM](https://nodei.co/npm/pg-dollar-quote.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/pg-dollar-quote/)
 
-[![Build Status](https://travis-ci.org/sehrope/node-pg-dollar-quote.svg?branch=master)](https://travis-ci.org/sehrope/node-rand-token)
+[![Build Status](https://travis-ci.org/sehrope/node-pg-dollar-quote.svg?branch=master)](https://travis-ci.org/sehrope/node-pg-dollar-quote)
 
 # Installation
 
