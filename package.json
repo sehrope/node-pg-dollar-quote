@@ -1,0 +1,16 @@
+{
+  "name": "pg-dollar-quote",
+  "version": "1.0.0",
+  "description": "Quote literals with PostgreSQL dollar quotes",
+  "main": "index.js",
+  "author": "Sehrope Sarkuni <sehrope@jackdb.com>",
+  "license": "ISC",
+  "types": "./index.d.ts",
+  "scripts": {
+    "test": "mocha --require should --reporter tap"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2",
+    "should": "^11.2.1"
+  }
+}
