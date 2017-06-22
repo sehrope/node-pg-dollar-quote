@@ -2,6 +2,17 @@
   "name": "pg-dollar-quote",
   "version": "1.0.0",
   "description": "Quote literals with PostgreSQL dollar quotes",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sehrope/node-pg-dollar-quote"
+  },
+  "keywords": [
+    "postgres",
+    "postgresql",
+    "quote",
+    "dollar",
+    "escape"
+  ],
   "main": "index.js",
   "author": "Sehrope Sarkuni <sehrope@jackdb.com>",
   "license": "ISC",
