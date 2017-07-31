@@ -1,13 +1,15 @@
-var tagChars = [
+var firstTagChars = [
     // Upper case alpha sans vowels
     'B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M',
     'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Z',
     // Lower case alpha sans vowels
     'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm',
-    'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'z',
-    // Numeric two through nine
-    '2', '3', '4', '5', '6', '7', '8', '9',
+    'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'z'
 ];
+var tagChars = firstTagChars.concat([
+    // Numeric two through nine
+    '2', '3', '4', '5', '6', '7', '8', '9'
+]);
 
 /**
  * Dollar quote a given string so that it can be used as a literal in a PostgreSQL SQL command.
@@ -36,6 +38,12 @@ module.exports = function dollarQuote(value) {
             return dollarQuote + value + dollarQuote;
         }
         // Tag was contained within val so add random character to it
-        tag += tagChars[Math.floor(Math.random() * tagChars.length)];
+        if (!tag) {
+            // First tag char so make sure to pick the start of an identifier
+            tag += firstTagChars[Math.floor(Math.random() * tagChars.length)];
+        } else {
+            // Not first tag char so can pick a number as well
+            tag += tagChars[Math.floor(Math.random() * tagChars.length)];
+        }
     }
 }

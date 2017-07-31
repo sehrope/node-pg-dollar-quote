@@ -39,4 +39,11 @@ describe('dollarQuote', function() {
             dollarQuote({foo: 123});
         });
     });
+
+    it('should not generate tags that start with a number', function() {
+        for(var i=0;i<1000;i++) {
+            var quotedValue = dollarQuote('$$');
+            assert(!/^\$[0-9]+/.test(quotedValue));
+        }
+    });
 });
