@@ -1,6 +1,6 @@
 {
   "name": "pg-dollar-quote",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Quote literals with PostgreSQL dollar quotes",
   "repository": {
     "type": "git",
